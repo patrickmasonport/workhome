@@ -1,0 +1,113 @@
+/* RESET CSS */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    background-color: #182027;
+    color: white;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* CUSTOM CSS */
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p, th, td {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+p, td {
+    opacity: 0.6;
+}
+
+a {
+    color: inherit;
+}
+
+div.contained {
+    max-width: 680px;
+    margin: auto;
+}
+
+div.contained.name {
+    padding: 56px 0 0 0;
+}
+
+div.contained.statement {
+    padding: 64px 0;
+}
+
+div.contained.divider {
+    height: 1px;
+    background-color: black;
+    opacity: 0.2;
+}
+
+div.contained.table {
+    padding: 40px 0;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin-bottom: 0.5rem;
+}
+
+.table-header p {
+    opacity: 1;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.table-row:hover p {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.table-header p:last-child, .table-row p:last-child {
+    text-align: right;
+}
