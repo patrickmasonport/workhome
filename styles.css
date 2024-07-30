@@ -62,6 +62,13 @@ div.contained {
     margin: auto;
 }
 
+@media screen and (max-width: 728px) {
+    div.contained {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
 div.contained.name {
     padding: 56px 0 0 0;
 }
@@ -71,9 +78,9 @@ div.contained.statement {
 }
 
 div.contained.divider {
-    height: 1px;
-    background-color: black;
-    opacity: 0.2;
+    height: 0.5px;
+    background-color: white;
+    opacity: 0.05;
 }
 
 div.contained.table {
