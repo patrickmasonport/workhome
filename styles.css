@@ -118,3 +118,23 @@ div.contained.table {
 .table-header p:last-child, .table-row p:last-child {
     text-align: right;
 }
+
+a.table-row.no-link:hover p {
+    opacity: 0.6;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+div.p-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+div.p-icon svg {
+    opacity: 0.6;
+}
+
+.table-row:hover div.p-icon svg {
+    opacity: 1;
+}
