@@ -154,6 +154,33 @@ header {
     }
 }
 
+header a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    opacity: 0.6;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-size: 0.875rem;
+    opacity: 1;
+}
+
+div.cover-image {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    background-color: #10151A;
+    padding: 3rem;
+    margin-bottom: 4rem;
+}
+
+div.cover-image img {
+    height: -webkit-fill-available;
+}
+
 div.contained.subhead-text p {
     margin-bottom: 1.5rem;
 }
