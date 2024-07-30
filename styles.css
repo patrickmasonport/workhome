@@ -43,7 +43,7 @@ h3 {
     margin-bottom: 0;
 }
 
-p, th, td {
+p, th, td, h4 {
     font-size: 0.875rem;
     font-weight: 400;
     text-align: left;
@@ -80,7 +80,7 @@ div.contained.statement {
 div.contained.divider {
     height: 0.5px;
     background-color: white;
-    opacity: 0.05;
+    opacity: 0.2;
 }
 
 div.contained.table {
@@ -137,4 +137,43 @@ div.p-icon svg {
 
 .table-row:hover div.p-icon svg {
     opacity: 1;
+}
+
+/* CASE CSS */
+
+header {
+    max-width: 680px;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 728px) {
+    header {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+div.contained.subhead-text p {
+    margin-bottom: 1.5rem;
+}
+
+div.contained.subhead-text p.above-list {
+    margin-bottom: 0.5rem;
+}
+
+div.contained.subhead-text p:last-child {
+    margin-bottom: 0px;
+}
+
+div.contained.subhead-text {
+    margin-bottom: 4rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+ul li:last-child {
+    margin-bottom: 8px;
 }
