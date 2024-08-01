@@ -143,6 +143,18 @@ div.p-icon svg {
 
 /* CASE CSS */
 
+body.mogotrade {
+    background-color: #18261E;
+}
+
+body.vancity {
+    background-color: #261918;
+}
+
+body.cwb {
+    background-color: #26181B;
+}
+
 header {
     max-width: 680px;
     margin: auto;
@@ -177,6 +189,18 @@ div.cover-image {
     background-color: #10151A;
     padding: 3rem;
     margin-bottom: 4rem;
+}
+
+div.cover-image.mogotrade-image {
+    background-color: #101A14;
+}
+
+div.cover-image.vancity-image {
+    background-color: #1A1110;
+}
+
+div.cover-image.cwb-image {
+    background-color: #1A1012;
 }
 
 div.cover-image img {
