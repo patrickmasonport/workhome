@@ -89,7 +89,7 @@ div.contained.divider {
 }
 
 div.contained.table {
-    padding: 40px 0;
+    padding: 3rem 0;
 }
 
 .table {
@@ -153,6 +153,74 @@ div.p-icon svg {
     opacity: 1;
 }
 
+div.grid-2 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    padding: 0 0 3rem 0;
+}
+
+div.grid-2 .grid-item {
+    flex-basis: calc(50% - 1rem);
+}
+
+a.grid-item p:first-of-type {
+    opacity: 1;
+}
+
+a.grid-item {
+    text-decoration: none;
+}
+
+a.grid-item:hover {
+    text-decoration: underline;
+}
+
+a.grid-item:hover p {
+    opacity: 1;
+}
+
+a.grid-item:hover div.project-image.phone-image img {
+    transform: scale(1.02);
+    transition: all 0.25s ease;
+}
+
+div.project-image {
+    border-radius: 0.5rem;
+    aspect-ratio : 1 / 1;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+div.project-image.phone-image {
+    padding-top: 15%;
+}
+
+div.project-image.mogotrade-image {
+    background-color: #101A14;
+}
+
+div.project-image.vancity-image {
+    background-color: #1A1110;
+}
+
+div.project-image.cwb-image {
+    background-color: #1A1012;
+}
+
+div.project-image.phone-image img {
+    width: 60%;
+    margin: auto;
+    transition: all 0.25s ease;
+}
+
+@media screen and (max-width: 728px) {
+    div.grid-2 .grid-item {
+        flex-basis: 100%;
+    }
+}
+
 /* CASE CSS */
 
 body.mogotrade {
@@ -192,6 +260,11 @@ header a:hover {
     opacity: 1;
 }
 
+div.text-links {
+    display: flex;
+    gap: 4px;
+}
+
 div.cover-image {
     max-width: 100%;
     display: flex;
@@ -217,6 +290,19 @@ div.cover-image.cwb-image {
 
 div.cover-image img {
     height: -webkit-fill-available;
+}
+
+div.recipe-image {
+    height: 680px;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+div.recipe-image img {
+    object-fit: cover;
+    width: -webkit-fill-available;
 }
 
 div.contained.subhead-text p {
