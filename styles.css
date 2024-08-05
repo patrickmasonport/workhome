@@ -44,14 +44,18 @@ h3 {
     margin-bottom: 0;
 }
 
-p, th, td, h4 {
+p, th, td, h4, ol {
     font-size: 0.875rem;
     font-weight: 400;
     text-align: left;
 }
 
-p, td {
+p, td, ol {
     opacity: 0.6;
+}
+
+p.kr {
+    font-family: "Noto Serif KR", serif;
 }
 
 a {
@@ -71,11 +75,11 @@ div.contained {
 }
 
 div.contained.name {
-    padding: 56px 0 0 0;
+    padding: 3rem 0 0 0;
 }
 
 div.contained.statement {
-    padding: 64px 0;
+    padding: 3rem 0;
 }
 
 div.contained.divider {
@@ -103,6 +107,10 @@ div.contained.table {
     opacity: 1;
 }
 
+.recipe .table-header {
+    grid-template-columns: 2fr 1fr;
+}
+
 .table-row {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
@@ -111,9 +119,13 @@ div.contained.table {
     color: inherit;
 }
 
-.table-row:hover p {
+a.table-row:hover p {
     text-decoration: underline;
     opacity: 1;
+}
+
+.recipe .table-row {
+    grid-template-columns: 2fr 1fr;
 }
 
 .table-header p:last-child, .table-row p:last-child {
@@ -188,7 +200,7 @@ div.cover-image {
     height: 480px;
     background-color: #10151A;
     padding: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 div.cover-image.mogotrade-image {
@@ -220,18 +232,18 @@ div.contained.subhead-text p:last-child {
 }
 
 div.contained.subhead-text {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 div.contained.subhead-text h4 {
     margin-bottom: 0.5rem;
 }
 
-ul {
+ul, ol {
     padding-left: 1rem;
 }
 
-ul li:last-child {
+ol li:last-child, ul li:last-child {
     margin-bottom: 8px;
 }
 
