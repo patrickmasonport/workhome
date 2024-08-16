@@ -45,7 +45,7 @@ h3 {
 }
 
 p, th, td, h4, ol {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     font-weight: 400;
     text-align: left;
 }
@@ -56,6 +56,10 @@ p, td, ol {
 
 p.kr {
     font-family: "Noto Serif KR", serif;
+}
+
+p.right-aligned {
+    text-align: right;
 }
 
 a {
@@ -76,6 +80,15 @@ div.contained {
 
 div.contained.name {
     padding: 3rem 0 0 0;
+}
+
+div.contained.name p, div.text-links p, a.grid-item p {
+    font-size: 0.875rem;
+    opacity: 0.6;
+}
+
+div.table-header p, div.table-row p {
+    font-size: 0.875rem;
 }
 
 div.contained.statement {
@@ -107,6 +120,10 @@ div.contained.table {
     opacity: 1;
 }
 
+.market .table-header {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+}
+
 .recipe .table-header {
     grid-template-columns: 2fr 1fr;
 }
@@ -122,6 +139,10 @@ div.contained.table {
 a.table-row:hover p {
     text-decoration: underline;
     opacity: 1;
+}
+
+.market .table-row {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .recipe .table-row {
