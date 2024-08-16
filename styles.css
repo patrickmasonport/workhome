@@ -87,7 +87,7 @@ div.contained.name p, div.text-links p, a.grid-item p {
     opacity: 0.6;
 }
 
-div.table-header p, div.table-row p {
+div.table-header p, a.table-row p, div.table-row p {
     font-size: 0.875rem;
 }
 
@@ -184,10 +184,6 @@ div.grid-2 {
 
 div.grid-2 .grid-item {
     flex-basis: calc(50% - 1rem);
-}
-
-a.grid-item p:first-of-type {
-    opacity: 1;
 }
 
 a.grid-item {
