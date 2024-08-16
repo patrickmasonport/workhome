@@ -45,7 +45,7 @@ h3 {
 }
 
 p, th, td, h4, ol {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: left;
 }
@@ -82,13 +82,9 @@ div.contained.name {
     padding: 3rem 0 0 0;
 }
 
-div.contained.name p, div.text-links p, a.grid-item p {
+div.contained.name p, a.grid-item p {
     font-size: 0.875rem;
     opacity: 0.6;
-}
-
-div.table-header p, a.table-row p, div.table-row p {
-    font-size: 0.875rem;
 }
 
 div.contained.statement {
@@ -355,7 +351,7 @@ a.external-link {
     align-items: center;
     gap: 4px;
     opacity: 0.6;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 a.external-link:hover {
